@@ -23,8 +23,24 @@ const { ping } = require('minepm');
     ping('mc.hypixel.net').then(res =>{
         console.log(res)
     })
-```
 
+
+/* Return: 
+{
+  name: 'Requires MC 1.8 / 1.16',
+  ip: 'mc.hypixel.net',
+  port: '25565',
+  motd: '             §aHypixel Network  §c[1.8-1.16]\n' +
+    '        §6§lSKYBLOCK 0.11 §7- §5§lDWARVEN MINES',    
+  players: { online: 101407, max: 200000 },
+  other: {
+    status: 'online',
+    error: null,
+    last_online: '1615304700',
+    protocol: 47
+  }
+} */
+```
 
 ## Installation
 
