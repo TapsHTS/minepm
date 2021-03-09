@@ -50,8 +50,7 @@ async function logo(mcip, port) {
     } else {
       mcport = port
     }
-
-    const fetch = require('node-fetch');
+    
     const res = await fetch(`https://eu.mc-api.net/v3/server/favicon/${mcip}:${mcport}`)
     
       var loginfo;
