@@ -32,7 +32,7 @@ const { ping } = require('minepm');
   port: '25565',
   motd: '             §aHypixel Network  §c[1.8-1.16]\n' +
     '        §6§lSKYBLOCK 0.11 §7- §5§lDWARVEN MINES',    
-  players: { online: 101407, max: 200000 },
+  players: { online: 101401, max: 200000 },
   other: {
     status: 'online',
     error: null,
