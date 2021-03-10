@@ -1,6 +1,6 @@
 {
   "name": "minepm",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A simple package for minecraft (server, player...)",
   "main": "main.js",
   "scripts": {
@@ -19,13 +19,13 @@
     "minecraft png icon",
     "minecraft icon api"
   ],
-  "author": "TapsHTS",
+  "author": "tapshts",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TapsHTS/minepm/issues"
   },
   "homepage": "https://github.com/TapsHTS/minepm#readme",
   "dependencies": {
-    "node-fetch": "2.6.1"
+    "node-fetch": "^2.6.1"
   }
 }
