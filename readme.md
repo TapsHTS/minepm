@@ -30,18 +30,41 @@ const { ping } = require('minepm');
 
 /* Return: 
 {
-  name: 'Requires MC 1.8 / 1.16',
-  ip: 'mc.hypixel.net',
-  port: '25565',
-  motd: '             §aHypixel Network  §c[1.8-1.16]\n' +
-    '        §6§lSKYBLOCK 0.11 §7- §5§lDWARVEN MINES',    
-  players: { online: 101401, max: 200000 },
-  other: {
-    status: 'online',
-    error: null,
-    last_online: '1615304700',
-    protocol: 47
-  }
+	"ip": "172.65.223.54",
+	"port": 25565,
+	"debug": {
+		"ping": true,
+		"query": false,
+		"srv": false,
+		"querymismatch": false,
+		"ipinsrv": false,
+		"cnameinsrv": false,
+		"animatedmotd": false,
+		"cachetime": 1645460474,
+		"apiversion": 2
+	},
+	"motd": {
+		"raw": [
+			"                §aHypixel Network §c[1.8-1.18]",
+			"      §e✰ §6§lSKYBLOCK - BEDWARS - AND MORE! §e✰"
+		],
+		"clean": [
+			"                Hypixel Network [1.8-1.18]",
+			"      ✰ SKYBLOCK - BEDWARS - AND MORE! ✰"
+		],
+		"html": [
+			"                <span style=\"color: #55FF55\">Hypixel Network <\/span><span style=\"color: #FF5555\">[1.8-1.18]<\/span>",
+			"      <span style=\"color: #FFFF55\">✰ <\/span><span style=\"color: #FFAA00\"><span style=\"font-weight: bold;\">SKYBLOCK - BEDWARS - AND MORE! <\/span><\/span><span style=\"color: #FFFF55\">✰<\/span>"
+		]
+	},
+	"players": {
+		"online": 71231,
+		"max": 200000
+	},
+	"version": "Requires MC 1.8 \/ 1.18",
+	"online": true,
+	"protocol": 47,
+	"hostname": "mc.hypixel.net"
 } */
 ```
 
