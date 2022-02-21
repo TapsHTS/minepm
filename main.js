@@ -1,44 +1,18 @@
 const fetch = require('node-fetch');
 
 
-async function ping(mcip, port) {
-    var mcport;
-    if (!port) {
-        mcport = '25565'
-    } else {
-        mcport = port
-    }
+async function ping(mcip) {
+    // var ip;
+    // if (!port) {
+    //     ip = mcip
+    // } else {
+    //     ip = `${mcip}:${mcport}`
+    // }
 
-    const info1 = await fetch(`https://mcapi.us/server/status?ip=${mcip}&port=${mcport}`);
+    const info1 = await fetch(`https://api.mcsrvstat.us/2/${mcip}`);
     const server = await info1.json();
-    const info2 = await fetch(`https://api.mcsrvstat.us/2/${mcip}:${mcport}`);
-    const data = await info2.json()
 
-    if (server.online === false) return console.log('An error was occured, the server is down or block the acces');
-    if (server.online) {
-        server.info = 'online';
-    } else {
-        server.info = 'offline';
-    };
-
-    server.desc = data.motd
-    const stats = {
-        name: server.server.name,
-        ip: mcip,
-        port: mcport,
-        motd: server.desc,
-        players: {
-            online: server.players.now,
-            max: server.players.max
-        },
-        other: {
-            status: server.info,
-            error: server.error,
-            last_online: server.last_online,
-            protocol: server.server.protocol,
-        },
-    };
-    return stats;
+    return server;
 
 
 }
